@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Roboto&family=Shantell+Sans:wght@500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  transition: background-color 0.5s ease;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  margin: 50;
+  text-align: center;
+  font-size: 35px;
+}
+h2 {
+  font-size: 23px;
+}
+h3 {
+  font-size: 18px;
+}
+
+#foto {
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  #foto {
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+/*Datos nombre, dni, etc*/
+.informacion {
+	position: relative;
+	display: inline-block;
+  top: 0px;
+  z-index: 1;
+  margin-right: 25px;
+}
+#datos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#iconos {
+  font-size: 40px;
+}
+@media only screen and (max-width: 600px) {
+  #iconos {
+    font-size: 25px;
+  }
+}
+.informacion .informacion2 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 10px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.informacion:hover .informacion2 {
+	visibility: visible;
+	opacity: 1;
+}
+
+/*menu de contenido del CV*/
+.contenedor {
+  display: flex;
+}
+.titulo {
+  margin-right: 10px;
+}
+.hacerclick {
+  cursor: pointer;
+}
+.contenido .oculto {
+  display: none;
+}
+main {
+  color: #333;
+  padding: 0px;
+  text-align: center;
+}
+#menu2 {
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  margin-right: 25px;
+}
+.contenido {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 70px;
+}
+@media (max-width: 750px) {
+  .contenido {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+li {
+  list-style: none;
+  margin-right: 45px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+}
+  
